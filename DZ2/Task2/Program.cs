@@ -2,7 +2,7 @@
 
 namespace Task2
 {
-    class Program
+    public class Program
     {
         enum Month 
         {
@@ -21,12 +21,18 @@ namespace Task2
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Практическое задание №2.2\nОпределение месяца по порядковому номеру.");
+            MonthAnswer();
+        }
+        public static int MonthAnswer()
+        {
+            Console.WriteLine("Определение месяца по порядковому номеру.");
             Console.Write("Введите порядковый номер месяца: ");
             string i = Console.ReadLine();
             int monthAnswer = Convert.ToInt32(i);
             Month curentMonth = (Month)monthAnswer;
             Console.WriteLine("Данному номеру соответствует месяц: " + curentMonth);
+            Console.WriteLine("");
+            return monthAnswer;
         }
     }
 }

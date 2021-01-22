@@ -6,7 +6,7 @@ namespace Task3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Практическое задание №2.3\nОпределение четного, нечетного числа.");
+            Console.WriteLine("Определение четного, нечетного числа.");
             int n = Console.Read();
             if (n % 2 == 1)
             {
